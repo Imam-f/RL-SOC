@@ -53,6 +53,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="D:/xilinx/vitis/2020.1/include/ap_sysc"/>
                                     									
+                                    <listOptionValue builtIn="false" value="D:/Dev/MBKM"/>
+                                    									
                                     <listOptionValue builtIn="false" value="D:/xilinx/vitis/2020.1/include/etc"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/xilinx/vitis/2020.1/win64/tools/auto_cc/include"/>
@@ -86,6 +88,8 @@
                                 <option id="gnu.c.compiler.option.include.paths.1774215764" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="D:/xilinx/vitis/2020.1/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Dev/MBKM"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/xilinx/vitis/2020.1/include/etc"/>
                                     									
@@ -157,6 +161,12 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1714363206.682423397" name="DataPack.h" rcbsApplicability="disable" resourcePath="source/DataPack.h" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1714363206.721358072" name="Stream.h" rcbsApplicability="disable" resourcePath="source/Stream.h" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1714363206.947251565" name="DataConfig.h" rcbsApplicability="disable" resourcePath="source/DataConfig.h" toolsToInvoke=""/>
+                    					
                     <sourceEntries>
                         						
                         <entry excluding=".apc|.settings|solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
@@ -221,6 +231,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="D:/xilinx/vitis/2020.1/include/ap_sysc"/>
                                     									
+                                    <listOptionValue builtIn="false" value="D:/Dev/MBKM"/>
+                                    									
                                     <listOptionValue builtIn="false" value="D:/xilinx/vitis/2020.1/include/etc"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/xilinx/vitis/2020.1/win64/tools/auto_cc/include"/>
@@ -244,6 +256,8 @@
                                 <option id="gnu.c.compiler.option.include.paths.941712177" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="D:/xilinx/vitis/2020.1/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Dev/MBKM"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/xilinx/vitis/2020.1/include/etc"/>
                                     									
@@ -304,6 +318,12 @@
                         </toolChain>
                         					
                     </folderInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.523326562.315025287" name="DataPack.h" rcbsApplicability="disable" resourcePath="source/DataPack.h" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.523326562.1346225861" name="Stream.h" rcbsApplicability="disable" resourcePath="source/Stream.h" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.523326562.900000970" name="DataConfig.h" rcbsApplicability="disable" resourcePath="source/DataConfig.h" toolsToInvoke=""/>
                     					
                     <sourceEntries>
                         						

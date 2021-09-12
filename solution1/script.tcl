@@ -13,7 +13,7 @@ add_files Tutorial5/InterfaceModule.h
 add_files Tutorial5/Stream.h -cflags "-std=c++11 -DHLSLIB_SYNTHESIS"
 add_files Tutorial5/Top.cpp
 add_files Tutorial5/Top.h
-add_files -tb Tutorial5/Top_tb.c
+add_files -tb Tutorial5/Top_tb.cpp
 open_solution "solution1" -flow_target vivado
 set_part {xczu7ev-fbvb900-2-e}
 create_clock -period 10 -name default
