@@ -1,4 +1,7 @@
 #include "Top.h"
+#include <iostream>
+
+using namespace std;
 
 void VecDotProduct(Vec128_t* vecA, Vec128_t* vecB, Sca32_t* scaC, int readRep) {
 	hlslib::Stream<Vec128_t,16> fifoA("fifoA");
@@ -20,7 +23,7 @@ void VecDotProduct(Vec128_t* vecA, Vec128_t* vecB, Sca32_t* scaC, int readRep) {
 	AdderTree(fifoC1, fifoC2, readRep);
 
 	// Accumulator
-	Accumulator(fifoC2, fifoC3, readRep)
+	Accumulator(fifoC2, fifoC3, readRep);
 
 	// Scalar C Writter
 	ScaWriter(fifoC3, scaC);

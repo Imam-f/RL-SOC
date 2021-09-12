@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:17:06.692+0700"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:17:06.674+0700"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:16:26.011+0700"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:16:25.994+0700"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:14:56.304+0700"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:14:56.284+0700"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:12:26.445+0700"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:12:26.430+0700"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:10:41.191+0700"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:10:41.171+0700"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:09:14.801+0700"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:09:14.783+0700"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:06:15.858+0700"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:06:15.830+0700"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:04:59.940+0700"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:04:59.908+0700"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:03:06.250+0700"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:03:06.236+0700"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:00:07.821+0700"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:00:07.804+0700"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:52:27.447+0700"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:52:27.426+0700"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:46:30.082+0700"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:46:30.063+0700"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:43:18.360+0700"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:43:18.347+0700"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:42:36.558+0700"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:41:27.807+0700"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

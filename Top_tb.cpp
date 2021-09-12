@@ -3,6 +3,7 @@
 #include <string>
 #include <chrono>
 
+
 using namespace std;
 
 #include "Top.h"
@@ -29,9 +30,9 @@ int main() {
 	}
 
 	// Compute using accelerator
-	VecDotProd((Vec128_t*)vecA, (Vec128_t*)vecB, &scaC, readRep);
+	VecDotProduct((Vec128_t*)vecA, (Vec128_t*)vecB, &scaC, readRep);
 
-	// Compare resilt
+	// Compare result
 	cout << "Reference result " << scaC_ref << endl;
 	cout << "Accelerator result " << scaC << endl;
 

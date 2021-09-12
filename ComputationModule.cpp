@@ -13,7 +13,7 @@ void EWiseMultipiler(hlslib::Stream<Vec128_t> &fifoA, hlslib::Stream<Vec128_t> &
 		vecB = fifoB.read();
 
 		// Elementwise multiplication
-		for(int n=0; i<VEC_WIDTH; n++) {
+		for(int n=0; n<VEC_WIDTH; n++) {
 			vecC[n] = vecA[n] * vecB[n];
 		}
 
@@ -27,8 +27,8 @@ void AdderTree(hlslib::Stream<Vec256_t> &fifoC_in, hlslib::Stream<Sca32_t> &fifo
 	Vec256_t vecC;
 	Sca32_t scaC;
 	Sca32_t temp1[8];
-	Sca32_t temp2[8];
-	Sca32_t temp3[8];
+	Sca32_t temp2[4];
+	Sca32_t temp3[2];
 
 	for (int i=0; i<readRep; i++) {
 		// Read from file
