@@ -351,11 +351,9 @@ class Stream<T, 0, Storage::Unspecified> {
   std::string const &name() const { return name_; }
 #endif
 
-#ifndef HLSLIB_SYNTHESIS
   void set_name(char const *const name) {
+#ifndef HLSLIB_SYNTHESIS
     name_ = name;
-#else
-  void set_name(char const *const) {
 #endif
   }
 
@@ -499,11 +497,11 @@ public:
 #if !defined(__VIVADO_HLS__) || defined(__VITIS_HLS__)
     #pragma HLS STREAM variable=this->stream_ depth=depth
     if (storage == Storage::BRAM) {
-      #pragma HLS bind_storage variable=this->stream_ type=FIFO impl=BRAM
+      #pragma HLS RESOURCE variable=this->stream_ core=FIFO_BRAM
     } else if (storage == Storage::LUTRAM) {
-      #pragma HLS bind_storage variable=this->stream_ type=FIFO impl=LUTRAM
+      #pragma HLS RESOURCE variable=this->stream_ core=FIFO_LUTRAM
     } else if (storage == Storage::SRL) {
-      #pragma HLS bind_storage variable=this->stream_ type=FIFO impl=SRL
+      #pragma HLS RESOURCE variable=this->stream_ core=FIFO_SRL
     }
 #endif
   }

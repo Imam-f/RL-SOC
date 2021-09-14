@@ -1,0 +1,237 @@
+
+
+================================================================
+== Vitis HLS Report for 'VecReader'
+================================================================
+* Date:           Tue Sep 14 13:21:04 2021
+
+* Version:        2020.1 (Build 2902540 on Wed May 27 20:16:15 MDT 2020)
+* Project:        Tutorial5
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 7.300 ns |   2.70 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max   | min | max |   Type  |
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |        1|        ?| 10.000 ns |         ?|    1|    ?|   none  |
+    +---------+---------+-----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |                  |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
+        |     Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
+        +------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |- VITIS_LOOP_4_1  |        2|        ?|         3|          1|          1| 1 ~ ? |    yes   |
+        +------------------+---------+---------+----------+-----------+-----------+-------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 12
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 9 10 11 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 12 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 12 10 
+10 --> 11 
+11 --> 9 
+12 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.83>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %ddr0, void @empty, i32, i32, void @empty_0, i32, i32, void @empty_0, void @empty_0, void @empty_0, i32, i32, i32, i32, void @empty_0, void @empty_0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %fifoA21, void @empty_9, i32, i32, void @empty_0, i32, i32, void @empty_0, void @empty_0, void @empty_0, i32, i32, i32, i32, void @empty_0, void @empty_0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %ddr, void @ap_fifo_str, i32, i32, void @p_str, i32, i32, void @p_str, void @p_str, void @p_str, i32, i32, i32, i32, void @p_str, void @ScalarProp_str"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%readRep_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %readRep" [Tutorial5/InterfaceModule.cpp:3]   --->   Operation 16 'read' 'readRep_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (1.83ns)   --->   "%ddr_2 = read i64 @_ssdm_op_Read.ap_fifo.i64P, i64 %ddr" [Tutorial5/InterfaceModule.cpp:3]   --->   Operation 17 'read' 'ddr_2' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 21 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specshared_ln0 = specshared void @_ssdm_op_SpecShared, i32 %readRep, void"   --->   Operation 18 'specshared' 'specshared_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i32 %readRep, void"   --->   Operation 19 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %fifoA21, void @empty_9, i32, i32, void @empty_0, i32, i32, void @empty_0, void @empty_0, void @empty_0, i32, i32, i32, i32, void @empty_0, void @empty_0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %ddr0, void @empty, i32, i32, void @empty_0, i32, i32, void @empty_0, void @empty_0, void @empty_0, i32, i32, i32, i32, void @empty_0, void @empty_0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.99ns)   --->   "%icmp_ln4 = icmp_sgt  i32 %readRep_read, i32" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 22 'icmp' 'icmp_ln4' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 10 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln4 = br i1 %icmp_ln4, void %.exit, void %.lr.ph.i" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 23 'br' 'br_ln4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%trunc_ln4_2 = partselect i60 @_ssdm_op_PartSelect.i60.i64.i32.i32, i64 %ddr_2, i32, i32" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 24 'partselect' 'trunc_ln4_2' <Predicate = (icmp_ln4)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%trunc_ln4 = trunc i32 %readRep_read" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 25 'trunc' 'trunc_ln4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%sext_ln4 = sext i60 %trunc_ln4_2" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 26 'sext' 'sext_ln4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%ddr0_addr = getelementptr i128 %ddr0, i64 %sext_ln4" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 27 'getelementptr' 'ddr0_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [7/7] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i128, i128 %ddr0_addr, i32 %readRep_read" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 28 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 55 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 7.30>
+ST_3 : Operation 29 [6/7] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i128, i128 %ddr0_addr, i32 %readRep_read" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 29 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 55 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 7.30>
+ST_4 : Operation 30 [5/7] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i128, i128 %ddr0_addr, i32 %readRep_read" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 30 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 55 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 31 [4/7] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i128, i128 %ddr0_addr, i32 %readRep_read" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 31 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 55 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 32 [3/7] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i128, i128 %ddr0_addr, i32 %readRep_read" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 32 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 55 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 33 [2/7] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i128, i128 %ddr0_addr, i32 %readRep_read" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 33 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 55 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 34 [1/7] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i128, i128 %ddr0_addr, i32 %readRep_read" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 34 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 55 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 35 [1/1] (0.65ns)   --->   "%br_ln4 = br void %bb.i" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 35 'br' 'br_ln4' <Predicate = true> <Delay = 0.65>
+
+State 9 <SV = 8> <Delay = 1.00>
+ST_9 : Operation 36 [1/1] (0.00ns)   --->   "%i = phi i31 %add_ln4, void %bb.split.i, i31, void %.lr.ph.i" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 36 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 37 [1/1] (0.99ns)   --->   "%icmp_ln4_2 = icmp_eq  i31 %i, i31 %trunc_ln4" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 37 'icmp' 'icmp_ln4_2' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 10 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 38 [1/1] (0.00ns)   --->   "%empty_92 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64, i64, i64"   --->   Operation 38 'speclooptripcount' 'empty_92' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 39 [1/1] (1.00ns)   --->   "%add_ln4 = add i31 %i, i31" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 39 'add' 'add_ln4' <Predicate = true> <Delay = 1.00> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln4 = br i1 %icmp_ln4_2, void %bb.split.i, void %.exit.loopexit" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 40 'br' 'br_ln4' <Predicate = true> <Delay = 0.00>
+
+State 10 <SV = 9> <Delay = 7.30>
+ST_10 : Operation 41 [1/1] (7.30ns)   --->   "%ddr0_addr_read = read i128 @_ssdm_op_Read.m_axi.p1i128, i128 %ddr0_addr, i1 %empty" [D:/xilinx/vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167]   --->   Operation 41 'read' 'ddr0_addr_read' <Predicate = (!icmp_ln4_2)> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 55 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 1.62>
+ST_11 : Operation 42 [1/1] (0.00ns)   --->   "%specpipeline_ln4 = specpipeline void @_ssdm_op_SpecPipeline, i32, i32, i32, i32, void @empty_0" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 42 'specpipeline' 'specpipeline_ln4' <Predicate = (!icmp_ln4_2)> <Delay = 0.00>
+ST_11 : Operation 43 [1/1] (0.00ns)   --->   "%specloopname_ln4 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11" [Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3]   --->   Operation 43 'specloopname' 'specloopname_ln4' <Predicate = (!icmp_ln4_2)> <Delay = 0.00>
+ST_11 : Operation 44 [1/1] (1.62ns)   --->   "%write_ln167 = write void @_ssdm_op_Write.ap_fifo.volatile.i128P, i128 %fifoA21, i128 %ddr0_addr_read" [D:/xilinx/vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167]   --->   Operation 44 'write' 'write_ln167' <Predicate = (!icmp_ln4_2)> <Delay = 1.62> <CoreInst = "FIFO">   --->   Core 18 'FIFO' <Latency = 0> <II = 1> <Delay = 1.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 16> <FIFO>
+ST_11 : Operation 45 [1/1] (0.00ns)   --->   "%br_ln0 = br void %bb.i"   --->   Operation 45 'br' 'br_ln0' <Predicate = (!icmp_ln4_2)> <Delay = 0.00>
+
+State 12 <SV = 9> <Delay = 0.00>
+ST_12 : Operation 46 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.exit"   --->   Operation 46 'br' 'br_ln0' <Predicate = (icmp_ln4)> <Delay = 0.00>
+ST_12 : Operation 47 [1/1] (0.00ns)   --->   "%ret_ln3 = ret" [Tutorial5/Top.cpp:3]   --->   Operation 47 'ret' 'ret_ln3' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 1.84ns
+The critical path consists of the following:
+	fifo read on port 'ddr' (Tutorial5/InterfaceModule.cpp:3) [9]  (1.84 ns)
+
+ <State 2>: 7.3ns
+The critical path consists of the following:
+	'getelementptr' operation ('ddr0_addr', Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3) [20]  (0 ns)
+	bus request on port 'ddr0' (Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3) [21]  (7.3 ns)
+
+ <State 3>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'ddr0' (Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3) [21]  (7.3 ns)
+
+ <State 4>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'ddr0' (Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3) [21]  (7.3 ns)
+
+ <State 5>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'ddr0' (Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3) [21]  (7.3 ns)
+
+ <State 6>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'ddr0' (Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3) [21]  (7.3 ns)
+
+ <State 7>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'ddr0' (Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3) [21]  (7.3 ns)
+
+ <State 8>: 7.3ns
+The critical path consists of the following:
+	bus request on port 'ddr0' (Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3) [21]  (7.3 ns)
+
+ <State 9>: 1.01ns
+The critical path consists of the following:
+	'phi' operation ('i', Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3) with incoming values : ('add_ln4', Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3) [24]  (0 ns)
+	'add' operation ('add_ln4', Tutorial5/InterfaceModule.cpp:4->Tutorial5/Top.cpp:3) [27]  (1.01 ns)
+
+ <State 10>: 7.3ns
+The critical path consists of the following:
+	bus read on port 'ddr0' (D:/xilinx/vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167) [32]  (7.3 ns)
+
+ <State 11>: 1.62ns
+The critical path consists of the following:
+	fifo write on port 'fifoA21' (D:/xilinx/vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167) [33]  (1.62 ns)
+
+ <State 12>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

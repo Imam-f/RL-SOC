@@ -1,0 +1,1 @@
+ {CheckOptions: [ {key: xilinx-tb-process.TopFunctionName, value: 'VecDotProduct'}, {key: xilinx-tb-process.KeepTopName, value: 1} ] } 

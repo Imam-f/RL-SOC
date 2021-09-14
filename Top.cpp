@@ -1,9 +1,14 @@
 #include "Top.h"
-#include <iostream>
-
-using namespace std;
 
 void VecDotProduct(Vec128_t* vecA, Vec128_t* vecB, Sca32_t* scaC, int readRep) {
+#pragma HLS INTERFACE s_axilite port=return
+#pragma HLS DATAFLOW
+#pragma HLS STABLE variable=readRep
+#pragma HLS SHARED variable=readRep
+#pragma HLS INTERFACE s_axilite port=readRep bundle=control
+#pragma HLS INTERFACE m_axi port=scaC offset=slave bundle=ddr2 depth=1
+#pragma HLS INTERFACE m_axi port=vecB offset=slave bundle=ddr1 depth=10000
+#pragma HLS INTERFACE m_axi port=vecA offset=slave bundle=ddr0 depth=10000
 	hlslib::Stream<Vec128_t,16> fifoA("fifoA");
 	hlslib::Stream<Vec128_t,16> fifoB("fifoB");
 	hlslib::Stream<Vec256_t,16> fifoC1("fifoC1");

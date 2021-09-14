@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1631600467738">
+  <ports id="1" name="ddr0" type="PortType" bitwidth="128" iftype="IfTypeFifo">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="fifoA21" type="PortType" originalName="fifo.stream_" coreName="FIFO" bitwidth="128" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="3" name="ddr" type="PortType" coreName="FIFO_SRL" bitwidth="64" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="readRep" type="PortType" originalName="readRep" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="42" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="45" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="46" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="49" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="50" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="51" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="52" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="55" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="60" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="61" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="62" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="65" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="66" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="67" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="68" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="69" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="72" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="73" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="74" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="75" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="78" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="79" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="80" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="83" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="86" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@ports.1"/>
+  <edges id="87" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="88" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="89" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="219" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="220" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.3"/>
+  <edges id="221" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="222" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="223" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="224" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="225" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="226" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <blocks id="16" name="entry" type="BlockType">
+    <controlOutputObjs>.lr.ph.i</controlOutputObjs>
+    <controlOutputObjs>.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="readRep_read" lineNumber="3" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." contextFuncName="VecReader" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecReader"/>
+      <dataInputObjs>readRep</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="ddr_2" lineNumber="3" originalName="ddr" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." contextFuncName="VecReader" bitwidth="64" opcode="read" m_display="0" m_delay="1.83" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecReader"/>
+      <dataInputObjs>ddr</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="icmp_ln4" lineNumber="4" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." rtlName="icmp_ln4_fu_115_p2" contextFuncName="VecReader" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.99" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="4" fileDirectory="D:\Dev\MBKM" functionName="VecReader"/>
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="br_ln4" lineNumber="4" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." contextFuncName="VecReader" opcode="br" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="4" fileDirectory="D:\Dev\MBKM" functionName="VecReader"/>
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.exit</controlInputObjs>
+      <controlInputObjs>.lr.ph.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tutorial5/InterfaceModule.cpp">
+      <validLinenumbers>3</validLinenumbers>
+      <validLinenumbers>4</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="Tutorial5/Top.cpp">
+      <validLinenumbers>3</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="23" name=".lr.ph.i" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>bb.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="trunc_ln4" lineNumber="4" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." rtlName="trunc_ln4_fu_131_p1" contextFuncName="VecReader" bitwidth="31" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="4" fileDirectory="D:\Dev\MBKM" functionName="VecReader"/>
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="trunc_ln4_2" lineNumber="4" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." rtlName="trunc_ln4_2_reg_165" contextFuncName="VecReader" bitwidth="60" opcode="partselect" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="4" fileDirectory="D:\Dev\MBKM" functionName="VecReader"/>
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="sext_ln4" lineNumber="4" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." rtlName="sext_ln4_fu_134_p1" contextFuncName="VecReader" bitwidth="64" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="4" fileDirectory="D:\Dev\MBKM" functionName="VecReader"/>
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="ddr0_addr" lineNumber="4" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." contextFuncName="VecReader" bitwidth="128" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="4" fileDirectory="D:\Dev\MBKM" functionName="VecReader"/>
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+      <dataInputObjs>ddr0</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+      <dataOutputObjs>read</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="empty" lineNumber="4" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." contextFuncName="VecReader" bitwidth="1" opcode="readreq" nodeLabel="1.0" nodeLatency="6" m_display="0" m_delay="7.3" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="4" fileDirectory="D:\Dev\MBKM" functionName="VecReader"/>
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln4" lineNumber="4" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." contextFuncName="VecReader" opcode="br" nodeLabel="7.0" m_display="0" m_delay="0.65" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="4" fileDirectory="D:\Dev\MBKM" functionName="VecReader"/>
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+      <controlInputObjs>bb.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tutorial5/InterfaceModule.cpp">
+      <validLinenumbers>4</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="Tutorial5/Top.cpp">
+      <validLinenumbers>3</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="37" name=".exit.loopexit" type="BlockType">
+    <controlInputObjs>bb.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln0" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <controlInputObjs>.exit</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="39" name=".exit" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>.exit.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="_ln3" lineNumber="3" fileName="Tutorial5/Top.cpp" fileDirectory=".." contextFuncName="VecDotProduct" opcode="ret" nodeLabel="11.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tutorial5/Top.cpp">
+      <validLinenumbers>3</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="143" pipe_depth="3" RegionName="VITIS_LOOP_4_1">
+    <basic_blocks id="29" name="bb.i" type="BlockType">
+      <controlInputObjs>.lr.ph.i</controlInputObjs>
+      <controlInputObjs>bb.split.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.exit.loopexit</controlOutputObjs>
+      <controlOutputObjs>bb.split.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="i" lineNumber="4" originalName="i" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." contextFuncName="VecReader" bitwidth="31" opcode="phi" nodeLabel="8.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="4" fileDirectory="D:\Dev\MBKM" functionName="VecReader"/>
+        <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>bb.split.i</controlInputObjs>
+        <controlInputObjs>.lr.ph.i</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="icmp_ln4_2" lineNumber="4" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." rtlName="icmp_ln4_2_fu_144_p2" contextFuncName="VecReader" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="0.99" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="4" fileDirectory="D:\Dev\MBKM" functionName="VecReader"/>
+        <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="add_ln4" lineNumber="4" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." rtlName="add_ln4_fu_149_p2" contextFuncName="VecReader" bitwidth="31" opcode="add" nodeLabel="8.0" m_display="0" m_delay="1.0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="4" fileDirectory="D:\Dev\MBKM" functionName="VecReader"/>
+        <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="br_ln4" lineNumber="4" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." contextFuncName="VecReader" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="4" fileDirectory="D:\Dev\MBKM" functionName="VecReader"/>
+        <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>bb.split.i</controlInputObjs>
+        <controlInputObjs>.exit.loopexit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="Tutorial5/InterfaceModule.cpp">
+        <validLinenumbers>4</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="Tutorial5/Top.cpp">
+        <validLinenumbers>3</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="35" name="bb.split.i" type="BlockType">
+      <controlInputObjs>bb.i</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>bb.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="ddr0_addr_read" lineNumber="167" fileName="D:/xilinx/vitis/2020.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." contextFuncName="write" bitwidth="128" opcode="read" nodeLabel="9.0" m_display="0" m_delay="7.3" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/xilinx/vitis/2020.1/common/technology/autopilot/hls_stream_39.h" linenumber="167" fileDirectory="D:\Dev\MBKM" functionName="write"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="fifoA21_write_ln167" lineNumber="167" fileName="D:/xilinx/vitis/2020.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." contextFuncName="write" opcode="write" nodeLabel="10.0" m_display="0" m_delay="1.62" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/xilinx/vitis/2020.1/common/technology/autopilot/hls_stream_39.h" linenumber="167" fileDirectory="D:\Dev\MBKM" functionName="write"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>fifoA21</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="br_ln0" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <controlInputObjs>bb.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="D:/xilinx/vitis/2020.1/common/technology/autopilot/hls_stream_39.h">
+        <validLinenumbers>167</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <regnodes realName="add_ln4_reg_185">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln4_2_reg_165">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="ddr0_addr_read_reg_190">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln4_reg_161">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <regnodes realName="ddr0_addr_reg_175">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln4_2_reg_181">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_104">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="readRep_read_reg_155">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln4_reg_170">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <expressionNodes realName="sext_ln4_fu_134">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln4_fu_149">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ddr0_addr_fu_137">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln4_2_fu_144">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln4_fu_115">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln4_fu_131">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_108">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln4_2_fu_121">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="ddr_2_read_fu_80">
+    <nodeIds>9</nodeIds>
+  </ioNodes>
+  <ioNodes realName="ddr0_addr_read_read_fu_92">
+    <nodeIds>32</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln167_write_fu_97">
+    <nodeIds>33</nodeIds>
+  </ioNodes>
+  <ioNodes realName="readRep_read_read_fu_74">
+    <nodeIds>8</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_86">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioPorts name="ddr">
+    <contents name="read">
+      <nodeIds>9</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ddr0"/>
+  <ioPorts name="fifoA21">
+    <contents name="write">
+      <nodeIds>33</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="readRep">
+    <contents name="read">
+      <nodeIds>8</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="7" latency="7"/>
+    </states>
+    <states id="3">
+      <operations id="21" stage="6" latency="7"/>
+    </states>
+    <states id="4">
+      <operations id="21" stage="5" latency="7"/>
+    </states>
+    <states id="5">
+      <operations id="21" stage="4" latency="7"/>
+    </states>
+    <states id="6">
+      <operations id="21" stage="3" latency="7"/>
+    </states>
+    <states id="7">
+      <operations id="21" stage="2" latency="7"/>
+    </states>
+    <states id="8">
+      <operations id="21" stage="1" latency="7"/>
+      <operations id="22" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="32" stage="1" latency="1"/>
+    </states>
+    <states id="11">
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+    </states>
+    <states id="12">
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="VecReader" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="7">
+      <basicBlocks>16</basicBlocks>
+      <basicBlocks>23</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_4_1" mII="1" mDepth="3" mMinTripCount="1" mMaxTripCount="-1" mMinLatency="2" mMaxLatency="-1" mType="1">
+      <basicBlocks>29</basicBlocks>
+      <basicBlocks>35</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>37</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>39</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

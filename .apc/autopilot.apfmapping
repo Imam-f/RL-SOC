@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="Top.h" path="D:\Dev\MBKM\Tutorial5\Top.h"/>
-    <originFiles name="Top.cpp" path="D:\Dev\MBKM\Tutorial5\Top.cpp"/>
-    <originFiles name="Stream.h" path="D:\Dev\MBKM\Tutorial5\Stream.h"/>
-    <originFiles name="InterfaceModule.h" path="D:\Dev\MBKM\Tutorial5\InterfaceModule.h"/>
-    <originFiles name="InterfaceModule.cpp" path="D:\Dev\MBKM\Tutorial5\InterfaceModule.cpp"/>
-    <originFiles name="DataPack.h" path="D:\Dev\MBKM\Tutorial5\DataPack.h"/>
-    <originFiles name="DataConfig.h" path="D:\Dev\MBKM\Tutorial5\DataConfig.h"/>
-    <originFiles name="ComputationModule.h" path="D:\Dev\MBKM\Tutorial5\ComputationModule.h"/>
     <originFiles name="ComputationModule.cpp" path="D:\Dev\MBKM\Tutorial5\ComputationModule.cpp"/>
+    <originFiles name="ComputationModule.h" path="D:\Dev\MBKM\Tutorial5\ComputationModule.h"/>
+    <originFiles name="DataConfig.h" path="D:\Dev\MBKM\Tutorial5\DataConfig.h"/>
+    <originFiles name="DataPack.h" path="D:\Dev\MBKM\Tutorial5\DataPack.h"/>
+    <originFiles name="InterfaceModule.cpp" path="D:\Dev\MBKM\Tutorial5\InterfaceModule.cpp"/>
+    <originFiles name="InterfaceModule.h" path="D:\Dev\MBKM\Tutorial5\InterfaceModule.h"/>
+    <originFiles name="Stream.h" path="D:\Dev\MBKM\Tutorial5\Stream.h"/>
+    <originFiles name="Top.cpp" path="D:\Dev\MBKM\Tutorial5\Top.cpp"/>
+    <originFiles name="Top.h" path="D:\Dev\MBKM\Tutorial5\Top.h"/>
   </source>
   <testbench>
     <originFiles name="Top_tb.cpp" path="D:\Dev\MBKM\Tutorial5\Top_tb.cpp"/>

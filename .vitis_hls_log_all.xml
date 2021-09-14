@@ -2,40 +2,38 @@
 <vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
   <errorLogs>
     <logs>
+      <synLog/>
+      <simLog>
+        <logs message="ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***&#xD;&#xA;command 'ap_source' returned error code&#xD;&#xA;    while executing&#xD;&#xA;&quot;source D:/Dev/MBKM/Tutorial5/solution1/cosim.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main D:/Dev/MBKM/Tutorial5/solution1/cosim.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="Tutorial5" solutionName="solution1" date="2021-09-14T13:21:39.537+0700"/>
+        <logs message="ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***" projectName="Tutorial5" solutionName="solution1" date="2021-09-14T13:21:39.281+0700"/>
+        <logs message="ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation errors." projectName="Tutorial5" solutionName="solution1" date="2021-09-14T13:21:39.269+0700"/>
+        <logs message="ERROR: [COSIM 212-321] EXE file generate failed." projectName="Tutorial5" solutionName="solution1" date="2021-09-14T13:21:39.258+0700"/>
+        <logs message="ERROR: [COSIM 212-317] C++ compile error." projectName="Tutorial5" solutionName="solution1" date="2021-09-14T13:21:39.189+0700"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
       <csimLog>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:17:06.692+0700"/>
-        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:17:06.674+0700"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:16:26.011+0700"/>
-        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:16:25.994+0700"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:14:56.304+0700"/>
-        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:14:56.284+0700"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:12:26.445+0700"/>
-        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:12:26.430+0700"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:10:41.191+0700"/>
-        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:10:41.171+0700"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:09:14.801+0700"/>
-        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:09:14.783+0700"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:06:15.858+0700"/>
-        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:06:15.830+0700"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:04:59.940+0700"/>
-        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:04:59.908+0700"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:03:06.250+0700"/>
-        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:03:06.236+0700"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:00:07.821+0700"/>
-        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T05:00:07.804+0700"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:52:27.447+0700"/>
-        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:52:27.426+0700"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:46:30.082+0700"/>
-        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:46:30.063+0700"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:43:18.360+0700"/>
-        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:43:18.347+0700"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:42:36.558+0700"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Tutorial5" solutionName="solution1" date="2021-09-13T04:41:27.807+0700"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Tutorial5" solutionName="solution1" date="2021-09-14T13:26:43.909+0700"/>
       </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="Tutorial5" solutionName="solution1" date="2021-09-14T13:21:09.121+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'VecDotProduct.entry43' to 'VecDotProduct_entry43'." projectName="Tutorial5" solutionName="solution1" date="2021-09-14T13:21:04.239+0700" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1449] Process VecReader1 has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process." projectName="Tutorial5" solutionName="solution1" date="2021-09-14T13:21:04.178+0700" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1449] Process VecReader has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process." projectName="Tutorial5" solutionName="solution1" date="2021-09-14T13:21:04.165+0700" type="Warning"/>
+        <logs message="WARNING: [HLS 200-786] Detected dataflow-on-top in function  'VecDotProduct'  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).&#xD;&#xA;Resolution: For help on HLS 200-786 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-786.html" projectName="Tutorial5" solutionName="solution1" date="2021-09-14T13:21:02.274+0700" type="Warning"/>
+        <logs message="WARNING: [HLS 200-805] An internal stream 'fifoC3.stream_' (Tutorial5/Top.cpp:16) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma." projectName="Tutorial5" solutionName="solution1" date="2021-09-14T13:21:02.172+0700" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: [COSIM 212-368] AXI_master port 'ddr2' has a default depth of 1. Insufficient depth may cause simulation mismatch or freeze. Please specify the depth in 'set_directive_interface' using the option '-depth'.&#xD;&#xA;/dev/null:1: *** missing separator.  Stop." projectName="Tutorial5" solutionName="solution1" date="2021-09-14T13:21:39.179+0700" type="Warning"/>
+        <logs message="WARNING: [COSIM 212-369] AXI_master port 'ddr1' has a depth of '10000'. Insufficient depth may result in simulation mismatch or freeze." projectName="Tutorial5" solutionName="solution1" date="2021-09-14T13:21:38.433+0700" type="Warning"/>
+        <logs message="WARNING: [COSIM 212-369] AXI_master port 'ddr0' has a depth of '10000'. Insufficient depth may result in simulation mismatch or freeze." projectName="Tutorial5" solutionName="solution1" date="2021-09-14T13:21:38.422+0700" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
       <csimLog/>
     </logs>
   </warningLogs>

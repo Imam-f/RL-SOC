@@ -1,0 +1,2743 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+<boost_serialization signature="serialization::archive" version="15">
+<syndb class_id="0" tracking_level="0" version="0">
+	<userIPLatency>-1</userIPLatency>
+	<userIPName></userIPName>
+	<cdfg class_id="1" tracking_level="1" version="0" object_id="_0">
+		<name>VecDotProduct</name>
+		<ret_bitwidth>0</ret_bitwidth>
+		<ports class_id="2" tracking_level="0" version="0">
+			<count>7</count>
+			<item_version>0</item_version>
+			<item class_id="3" tracking_level="1" version="0" object_id="_1">
+				<Value class_id="4" tracking_level="0" version="0">
+					<Obj class_id="5" tracking_level="0" version="0">
+						<type>1</type>
+						<id>1</id>
+						<name>ddr0</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo class_id="6" tracking_level="0" version="0">
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>128</bitwidth>
+				</Value>
+				<direction>0</direction>
+				<if_type>4</if_type>
+				<array_size>0</array_size>
+				<bit_vecs class_id="7" tracking_level="0" version="0">
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_2">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>2</id>
+						<name>ddr1</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>128</bitwidth>
+				</Value>
+				<direction>0</direction>
+				<if_type>4</if_type>
+				<array_size>0</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_3">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>3</id>
+						<name>ddr2</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<direction>1</direction>
+				<if_type>4</if_type>
+				<array_size>0</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_4">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>4</id>
+						<name>vecA</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName>vecA</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<direction>0</direction>
+				<if_type>0</if_type>
+				<array_size>0</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_5">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>5</id>
+						<name>vecB</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName>vecB</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<direction>0</direction>
+				<if_type>0</if_type>
+				<array_size>0</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_6">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>6</id>
+						<name>scaC</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName>scaC</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<direction>0</direction>
+				<if_type>0</if_type>
+				<array_size>0</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_7">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>7</id>
+						<name>readRep</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName>readRep</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<direction>0</direction>
+				<if_type>0</if_type>
+				<array_size>0</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+		</ports>
+		<nodes class_id="8" tracking_level="0" version="0">
+			<count>20</count>
+			<item_version>0</item_version>
+			<item class_id="9" tracking_level="1" version="0" object_id="_8">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>8</id>
+						<name>readRep_read</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>3</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item class_id="10" tracking_level="0" version="0">
+								<first>D:\Dev\MBKM</first>
+								<second class_id="11" tracking_level="0" version="0">
+									<count>1</count>
+									<item_version>0</item_version>
+									<item class_id="12" tracking_level="0" version="0">
+										<first class_id="13" tracking_level="0" version="0">
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>3</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>readRep</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>66</item>
+					<item>67</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.00</m_delay>
+				<m_topoIndex>1</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_9">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>9</id>
+						<name>scaC_read</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>3</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>3</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>scaC</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>69</item>
+					<item>70</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.00</m_delay>
+				<m_topoIndex>2</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_10">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>10</id>
+						<name>vecB_read</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>3</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>3</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>vecB</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>71</item>
+					<item>72</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.00</m_delay>
+				<m_topoIndex>3</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_11">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>11</id>
+						<name>vecA_read</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>3</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>3</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>vecA</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>73</item>
+					<item>74</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.00</m_delay>
+				<m_topoIndex>4</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_12">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>12</id>
+						<name>scaC_c</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>3</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>3</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>76</item>
+				</oprand_edges>
+				<opcode>alloca</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>5</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_13">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>13</id>
+						<name>vecB_c</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>3</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>3</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>77</item>
+				</oprand_edges>
+				<opcode>alloca</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>6</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_14">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>14</id>
+						<name>vecA_c</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>3</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>3</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>78</item>
+				</oprand_edges>
+				<opcode>alloca</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>7</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_15">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>33</id>
+						<name>fifoA_stream_s</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>12</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>12</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>fifoA.stream_</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>128</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>79</item>
+				</oprand_edges>
+				<opcode>alloca</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>8</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_16">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>36</id>
+						<name>fifoB_stream_s</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>13</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>13</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>fifoB.stream_</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>128</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>80</item>
+				</oprand_edges>
+				<opcode>alloca</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>9</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_17">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>39</id>
+						<name>fifoC1_stream_s</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>14</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>14</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>fifoC1.stream_</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>256</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>81</item>
+				</oprand_edges>
+				<opcode>alloca</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>10</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_18">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>42</id>
+						<name>fifoC2_stream_s</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>15</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>15</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>fifoC2.stream_</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>82</item>
+				</oprand_edges>
+				<opcode>alloca</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>11</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_19">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>45</id>
+						<name>fifoC3_stream_s</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>16</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>16</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>fifoC3.stream_</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>83</item>
+				</oprand_edges>
+				<opcode>alloca</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>12</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_20">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>56</id>
+						<name>_ln3</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>3</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>3</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>7</count>
+					<item_version>0</item_version>
+					<item>85</item>
+					<item>86</item>
+					<item>87</item>
+					<item>88</item>
+					<item>89</item>
+					<item>90</item>
+					<item>91</item>
+				</oprand_edges>
+				<opcode>call</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.88</m_delay>
+				<m_topoIndex>13</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_21">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>57</id>
+						<name>_ln19</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>19</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>19</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>7</count>
+					<item_version>0</item_version>
+					<item>93</item>
+					<item>94</item>
+					<item>95</item>
+					<item>96</item>
+					<item>97</item>
+					<item>618</item>
+					<item>620</item>
+				</oprand_edges>
+				<opcode>call</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.99</m_delay>
+				<m_topoIndex>14</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_22">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>58</id>
+						<name>_ln22</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>22</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>22</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>6</count>
+					<item_version>0</item_version>
+					<item>99</item>
+					<item>100</item>
+					<item>101</item>
+					<item>102</item>
+					<item>103</item>
+					<item>619</item>
+				</oprand_edges>
+				<opcode>call</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.99</m_delay>
+				<m_topoIndex>15</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_23">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>59</id>
+						<name>_ln25</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>25</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>25</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>8</count>
+					<item_version>0</item_version>
+					<item>105</item>
+					<item>106</item>
+					<item>107</item>
+					<item>108</item>
+					<item>109</item>
+					<item>616</item>
+					<item>617</item>
+					<item>621</item>
+				</oprand_edges>
+				<opcode>call</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>16</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_24">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>60</id>
+						<name>_ln28</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>28</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>28</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>6</count>
+					<item_version>0</item_version>
+					<item>111</item>
+					<item>112</item>
+					<item>113</item>
+					<item>114</item>
+					<item>615</item>
+					<item>622</item>
+				</oprand_edges>
+				<opcode>call</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>17</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_25">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>61</id>
+						<name>_ln31</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>31</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>31</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>6</count>
+					<item_version>0</item_version>
+					<item>116</item>
+					<item>117</item>
+					<item>118</item>
+					<item>119</item>
+					<item>614</item>
+					<item>623</item>
+				</oprand_edges>
+				<opcode>call</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>18</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_26">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>62</id>
+						<name>_ln34</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>34</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>34</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>6</count>
+					<item_version>0</item_version>
+					<item>121</item>
+					<item>122</item>
+					<item>123</item>
+					<item>124</item>
+					<item>613</item>
+					<item>624</item>
+				</oprand_edges>
+				<opcode>call</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>19</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_27">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>63</id>
+						<name>_ln35</name>
+						<fileName>Tutorial5/Top.cpp</fileName>
+						<fileDirectory>D:\Dev\MBKM</fileDirectory>
+						<lineNumber>35</lineNumber>
+						<contextFuncName>VecDotProduct</contextFuncName>
+						<contextNormFuncName>VecDotProduct</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\Dev\MBKM</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Tutorial5/Top.cpp</first>
+											<second>VecDotProduct</second>
+										</first>
+										<second>35</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>0</count>
+					<item_version>0</item_version>
+				</oprand_edges>
+				<opcode>ret</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>20</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+		</nodes>
+		<consts class_id="15" tracking_level="0" version="0">
+			<count>8</count>
+			<item_version>0</item_version>
+			<item class_id="16" tracking_level="1" version="0" object_id="_28">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>75</id>
+						<name>empty</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<const_type>0</const_type>
+				<content>1</content>
+			</item>
+			<item class_id_reference="16" object_id="_29">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>84</id>
+						<name>VecDotProduct_entry43</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<const_type>6</const_type>
+				<content>&lt;constant:VecDotProduct.entry43&gt;</content>
+			</item>
+			<item class_id_reference="16" object_id="_30">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>92</id>
+						<name>VecReader</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<const_type>6</const_type>
+				<content>&lt;constant:VecReader&gt;</content>
+			</item>
+			<item class_id_reference="16" object_id="_31">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>98</id>
+						<name>VecReader1</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<const_type>6</const_type>
+				<content>&lt;constant:VecReader1&gt;</content>
+			</item>
+			<item class_id_reference="16" object_id="_32">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>104</id>
+						<name>EWiseMultipiler</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<const_type>6</const_type>
+				<content>&lt;constant:EWiseMultipiler&gt;</content>
+			</item>
+			<item class_id_reference="16" object_id="_33">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>110</id>
+						<name>AdderTree</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<const_type>6</const_type>
+				<content>&lt;constant:AdderTree&gt;</content>
+			</item>
+			<item class_id_reference="16" object_id="_34">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>115</id>
+						<name>Accumulator</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<const_type>6</const_type>
+				<content>&lt;constant:Accumulator&gt;</content>
+			</item>
+			<item class_id_reference="16" object_id="_35">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>120</id>
+						<name>ScaWriter</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<const_type>6</const_type>
+				<content>&lt;constant:ScaWriter&gt;</content>
+			</item>
+		</consts>
+		<blocks class_id="17" tracking_level="0" version="0">
+			<count>1</count>
+			<item_version>0</item_version>
+			<item class_id="18" tracking_level="1" version="0" object_id="_36">
+				<Obj>
+					<type>3</type>
+					<id>64</id>
+					<name>VecDotProduct</name>
+					<fileName></fileName>
+					<fileDirectory></fileDirectory>
+					<lineNumber>0</lineNumber>
+					<contextFuncName></contextFuncName>
+					<contextNormFuncName></contextNormFuncName>
+					<inlineStackInfo>
+						<count>0</count>
+						<item_version>0</item_version>
+					</inlineStackInfo>
+					<originalName></originalName>
+					<rtlName></rtlName>
+					<coreName></coreName>
+				</Obj>
+				<node_objs>
+					<count>20</count>
+					<item_version>0</item_version>
+					<item>8</item>
+					<item>9</item>
+					<item>10</item>
+					<item>11</item>
+					<item>12</item>
+					<item>13</item>
+					<item>14</item>
+					<item>33</item>
+					<item>36</item>
+					<item>39</item>
+					<item>42</item>
+					<item>45</item>
+					<item>56</item>
+					<item>57</item>
+					<item>58</item>
+					<item>59</item>
+					<item>60</item>
+					<item>61</item>
+					<item>62</item>
+					<item>63</item>
+				</node_objs>
+			</item>
+		</blocks>
+		<edges class_id="19" tracking_level="0" version="0">
+			<count>58</count>
+			<item_version>0</item_version>
+			<item class_id="20" tracking_level="1" version="0" object_id="_37">
+				<id>67</id>
+				<edge_type>1</edge_type>
+				<source_obj>7</source_obj>
+				<sink_obj>8</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_38">
+				<id>70</id>
+				<edge_type>1</edge_type>
+				<source_obj>6</source_obj>
+				<sink_obj>9</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_39">
+				<id>72</id>
+				<edge_type>1</edge_type>
+				<source_obj>5</source_obj>
+				<sink_obj>10</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_40">
+				<id>74</id>
+				<edge_type>1</edge_type>
+				<source_obj>4</source_obj>
+				<sink_obj>11</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_41">
+				<id>76</id>
+				<edge_type>1</edge_type>
+				<source_obj>75</source_obj>
+				<sink_obj>12</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_42">
+				<id>77</id>
+				<edge_type>1</edge_type>
+				<source_obj>75</source_obj>
+				<sink_obj>13</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_43">
+				<id>78</id>
+				<edge_type>1</edge_type>
+				<source_obj>75</source_obj>
+				<sink_obj>14</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_44">
+				<id>79</id>
+				<edge_type>1</edge_type>
+				<source_obj>75</source_obj>
+				<sink_obj>33</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_45">
+				<id>80</id>
+				<edge_type>1</edge_type>
+				<source_obj>75</source_obj>
+				<sink_obj>36</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_46">
+				<id>81</id>
+				<edge_type>1</edge_type>
+				<source_obj>75</source_obj>
+				<sink_obj>39</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_47">
+				<id>82</id>
+				<edge_type>1</edge_type>
+				<source_obj>75</source_obj>
+				<sink_obj>42</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_48">
+				<id>83</id>
+				<edge_type>1</edge_type>
+				<source_obj>75</source_obj>
+				<sink_obj>45</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_49">
+				<id>85</id>
+				<edge_type>1</edge_type>
+				<source_obj>84</source_obj>
+				<sink_obj>56</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_50">
+				<id>86</id>
+				<edge_type>1</edge_type>
+				<source_obj>11</source_obj>
+				<sink_obj>56</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_51">
+				<id>87</id>
+				<edge_type>1</edge_type>
+				<source_obj>10</source_obj>
+				<sink_obj>56</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_52">
+				<id>88</id>
+				<edge_type>1</edge_type>
+				<source_obj>9</source_obj>
+				<sink_obj>56</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_53">
+				<id>89</id>
+				<edge_type>1</edge_type>
+				<source_obj>14</source_obj>
+				<sink_obj>56</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_54">
+				<id>90</id>
+				<edge_type>1</edge_type>
+				<source_obj>13</source_obj>
+				<sink_obj>56</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_55">
+				<id>91</id>
+				<edge_type>1</edge_type>
+				<source_obj>12</source_obj>
+				<sink_obj>56</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_56">
+				<id>93</id>
+				<edge_type>1</edge_type>
+				<source_obj>92</source_obj>
+				<sink_obj>57</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_57">
+				<id>94</id>
+				<edge_type>1</edge_type>
+				<source_obj>1</source_obj>
+				<sink_obj>57</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_58">
+				<id>95</id>
+				<edge_type>1</edge_type>
+				<source_obj>33</source_obj>
+				<sink_obj>57</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_59">
+				<id>96</id>
+				<edge_type>1</edge_type>
+				<source_obj>14</source_obj>
+				<sink_obj>57</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_60">
+				<id>97</id>
+				<edge_type>1</edge_type>
+				<source_obj>8</source_obj>
+				<sink_obj>57</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_61">
+				<id>99</id>
+				<edge_type>1</edge_type>
+				<source_obj>98</source_obj>
+				<sink_obj>58</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_62">
+				<id>100</id>
+				<edge_type>1</edge_type>
+				<source_obj>2</source_obj>
+				<sink_obj>58</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_63">
+				<id>101</id>
+				<edge_type>1</edge_type>
+				<source_obj>36</source_obj>
+				<sink_obj>58</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_64">
+				<id>102</id>
+				<edge_type>1</edge_type>
+				<source_obj>13</source_obj>
+				<sink_obj>58</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_65">
+				<id>103</id>
+				<edge_type>1</edge_type>
+				<source_obj>8</source_obj>
+				<sink_obj>58</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_66">
+				<id>105</id>
+				<edge_type>1</edge_type>
+				<source_obj>104</source_obj>
+				<sink_obj>59</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_67">
+				<id>106</id>
+				<edge_type>1</edge_type>
+				<source_obj>33</source_obj>
+				<sink_obj>59</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_68">
+				<id>107</id>
+				<edge_type>1</edge_type>
+				<source_obj>36</source_obj>
+				<sink_obj>59</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_69">
+				<id>108</id>
+				<edge_type>1</edge_type>
+				<source_obj>39</source_obj>
+				<sink_obj>59</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_70">
+				<id>109</id>
+				<edge_type>1</edge_type>
+				<source_obj>8</source_obj>
+				<sink_obj>59</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_71">
+				<id>111</id>
+				<edge_type>1</edge_type>
+				<source_obj>110</source_obj>
+				<sink_obj>60</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_72">
+				<id>112</id>
+				<edge_type>1</edge_type>
+				<source_obj>39</source_obj>
+				<sink_obj>60</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_73">
+				<id>113</id>
+				<edge_type>1</edge_type>
+				<source_obj>42</source_obj>
+				<sink_obj>60</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_74">
+				<id>114</id>
+				<edge_type>1</edge_type>
+				<source_obj>8</source_obj>
+				<sink_obj>60</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_75">
+				<id>116</id>
+				<edge_type>1</edge_type>
+				<source_obj>115</source_obj>
+				<sink_obj>61</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_76">
+				<id>117</id>
+				<edge_type>1</edge_type>
+				<source_obj>42</source_obj>
+				<sink_obj>61</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_77">
+				<id>118</id>
+				<edge_type>1</edge_type>
+				<source_obj>45</source_obj>
+				<sink_obj>61</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_78">
+				<id>119</id>
+				<edge_type>1</edge_type>
+				<source_obj>8</source_obj>
+				<sink_obj>61</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_79">
+				<id>121</id>
+				<edge_type>1</edge_type>
+				<source_obj>120</source_obj>
+				<sink_obj>62</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_80">
+				<id>122</id>
+				<edge_type>1</edge_type>
+				<source_obj>45</source_obj>
+				<sink_obj>62</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_81">
+				<id>123</id>
+				<edge_type>1</edge_type>
+				<source_obj>3</source_obj>
+				<sink_obj>62</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_82">
+				<id>124</id>
+				<edge_type>1</edge_type>
+				<source_obj>12</source_obj>
+				<sink_obj>62</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_83">
+				<id>613</id>
+				<edge_type>4</edge_type>
+				<source_obj>61</source_obj>
+				<sink_obj>62</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_84">
+				<id>614</id>
+				<edge_type>4</edge_type>
+				<source_obj>60</source_obj>
+				<sink_obj>61</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_85">
+				<id>615</id>
+				<edge_type>4</edge_type>
+				<source_obj>59</source_obj>
+				<sink_obj>60</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_86">
+				<id>616</id>
+				<edge_type>4</edge_type>
+				<source_obj>58</source_obj>
+				<sink_obj>59</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_87">
+				<id>617</id>
+				<edge_type>4</edge_type>
+				<source_obj>57</source_obj>
+				<sink_obj>59</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_88">
+				<id>618</id>
+				<edge_type>4</edge_type>
+				<source_obj>56</source_obj>
+				<sink_obj>57</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_89">
+				<id>619</id>
+				<edge_type>4</edge_type>
+				<source_obj>56</source_obj>
+				<sink_obj>58</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_90">
+				<id>620</id>
+				<edge_type>4</edge_type>
+				<source_obj>56</source_obj>
+				<sink_obj>57</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_91">
+				<id>621</id>
+				<edge_type>4</edge_type>
+				<source_obj>57</source_obj>
+				<sink_obj>59</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_92">
+				<id>622</id>
+				<edge_type>4</edge_type>
+				<source_obj>59</source_obj>
+				<sink_obj>60</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_93">
+				<id>623</id>
+				<edge_type>4</edge_type>
+				<source_obj>60</source_obj>
+				<sink_obj>61</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_94">
+				<id>624</id>
+				<edge_type>4</edge_type>
+				<source_obj>61</source_obj>
+				<sink_obj>62</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+		</edges>
+	</cdfg>
+	<cdfg_regions class_id="21" tracking_level="0" version="0">
+		<count>1</count>
+		<item_version>0</item_version>
+		<item class_id="22" tracking_level="1" version="0" object_id="_95">
+			<mId>1</mId>
+			<mTag>VecDotProduct</mTag>
+			<mNormTag>VecDotProduct</mNormTag>
+			<mType>0</mType>
+			<sub_regions>
+				<count>0</count>
+				<item_version>0</item_version>
+			</sub_regions>
+			<basic_blocks>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>64</item>
+			</basic_blocks>
+			<mII>-1</mII>
+			<mDepth>-1</mDepth>
+			<mMinTripCount>-1</mMinTripCount>
+			<mMaxTripCount>-1</mMaxTripCount>
+			<mMinLatency>-1</mMinLatency>
+			<mMaxLatency>-1</mMaxLatency>
+			<mIsDfPipe>1</mIsDfPipe>
+			<mDfPipe class_id="23" tracking_level="1" version="0" object_id="_96">
+				<port_list class_id="24" tracking_level="0" version="0">
+					<count>0</count>
+					<item_version>0</item_version>
+				</port_list>
+				<process_list class_id="25" tracking_level="0" version="0">
+					<count>7</count>
+					<item_version>0</item_version>
+					<item class_id="26" tracking_level="1" version="0" object_id="_97">
+						<type>0</type>
+						<name>VecDotProduct_entry43_U0</name>
+						<ssdmobj_id>56</ssdmobj_id>
+						<pins class_id="27" tracking_level="0" version="0">
+							<count>6</count>
+							<item_version>0</item_version>
+							<item class_id="28" tracking_level="1" version="0" object_id="_98">
+								<port class_id="29" tracking_level="1" version="0" object_id="_99">
+									<name>vecA</name>
+									<dir>3</dir>
+									<type>0</type>
+								</port>
+								<inst class_id="30" tracking_level="1" version="0" object_id="_100">
+									<type>0</type>
+									<name>VecDotProduct_entry43_U0</name>
+									<ssdmobj_id>56</ssdmobj_id>
+								</inst>
+							</item>
+							<item class_id_reference="28" object_id="_101">
+								<port class_id_reference="29" object_id="_102">
+									<name>vecB</name>
+									<dir>3</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_100"></inst>
+							</item>
+							<item class_id_reference="28" object_id="_103">
+								<port class_id_reference="29" object_id="_104">
+									<name>scaC</name>
+									<dir>3</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_100"></inst>
+							</item>
+							<item class_id_reference="28" object_id="_105">
+								<port class_id_reference="29" object_id="_106">
+									<name>vecA_out</name>
+									<dir>0</dir>
+									<type>1</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_100"></inst>
+							</item>
+							<item class_id_reference="28" object_id="_107">
+								<port class_id_reference="29" object_id="_108">
+									<name>vecB_out</name>
+									<dir>0</dir>
+									<type>1</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_100"></inst>
+							</item>
+							<item class_id_reference="28" object_id="_109">
+								<port class_id_reference="29" object_id="_110">
+									<name>scaC_out</name>
+									<dir>0</dir>
+									<type>1</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_100"></inst>
+							</item>
+						</pins>
+					</item>
+					<item class_id_reference="26" object_id="_111">
+						<type>0</type>
+						<name>VecReader_U0</name>
+						<ssdmobj_id>57</ssdmobj_id>
+						<pins>
+							<count>4</count>
+							<item_version>0</item_version>
+							<item class_id_reference="28" object_id="_112">
+								<port class_id_reference="29" object_id="_113">
+									<name>ddr0</name>
+									<dir>1</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id="_114">
+									<type>0</type>
+									<name>VecReader_U0</name>
+									<ssdmobj_id>57</ssdmobj_id>
+								</inst>
+							</item>
+							<item class_id_reference="28" object_id="_115">
+								<port class_id_reference="29" object_id="_116">
+									<name>fifoA21</name>
+									<dir>0</dir>
+									<type>1</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_114"></inst>
+							</item>
+							<item class_id_reference="28" object_id="_117">
+								<port class_id_reference="29" object_id="_118">
+									<name>ddr</name>
+									<dir>0</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_114"></inst>
+							</item>
+							<item class_id_reference="28" object_id="_119">
+								<port class_id_reference="29" object_id="_120">
+									<name>readRep</name>
+									<dir>3</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_114"></inst>
+							</item>
+						</pins>
+					</item>
+					<item class_id_reference="26" object_id="_121">
+						<type>0</type>
+						<name>VecReader1_U0</name>
+						<ssdmobj_id>58</ssdmobj_id>
+						<pins>
+							<count>4</count>
+							<item_version>0</item_version>
+							<item class_id_reference="28" object_id="_122">
+								<port class_id_reference="29" object_id="_123">
+									<name>ddr0</name>
+									<dir>1</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id="_124">
+									<type>0</type>
+									<name>VecReader1_U0</name>
+									<ssdmobj_id>58</ssdmobj_id>
+								</inst>
+							</item>
+							<item class_id_reference="28" object_id="_125">
+								<port class_id_reference="29" object_id="_126">
+									<name>fifoA21</name>
+									<dir>0</dir>
+									<type>1</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_124"></inst>
+							</item>
+							<item class_id_reference="28" object_id="_127">
+								<port class_id_reference="29" object_id="_128">
+									<name>ddr</name>
+									<dir>0</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_124"></inst>
+							</item>
+							<item class_id_reference="28" object_id="_129">
+								<port class_id_reference="29" object_id="_130">
+									<name>readRep</name>
+									<dir>3</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_124"></inst>
+							</item>
+						</pins>
+					</item>
+					<item class_id_reference="26" object_id="_131">
+						<type>0</type>
+						<name>EWiseMultipiler_U0</name>
+						<ssdmobj_id>59</ssdmobj_id>
+						<pins>
+							<count>4</count>
+							<item_version>0</item_version>
+							<item class_id_reference="28" object_id="_132">
+								<port class_id_reference="29" object_id="_133">
+									<name>fifoA21</name>
+									<dir>0</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id="_134">
+									<type>0</type>
+									<name>EWiseMultipiler_U0</name>
+									<ssdmobj_id>59</ssdmobj_id>
+								</inst>
+							</item>
+							<item class_id_reference="28" object_id="_135">
+								<port class_id_reference="29" object_id="_136">
+									<name>fifoB22</name>
+									<dir>0</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_134"></inst>
+							</item>
+							<item class_id_reference="28" object_id="_137">
+								<port class_id_reference="29" object_id="_138">
+									<name>fifoC123</name>
+									<dir>0</dir>
+									<type>1</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_134"></inst>
+							</item>
+							<item class_id_reference="28" object_id="_139">
+								<port class_id_reference="29" object_id="_140">
+									<name>readRep</name>
+									<dir>3</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_134"></inst>
+							</item>
+						</pins>
+					</item>
+					<item class_id_reference="26" object_id="_141">
+						<type>0</type>
+						<name>AdderTree_U0</name>
+						<ssdmobj_id>60</ssdmobj_id>
+						<pins>
+							<count>3</count>
+							<item_version>0</item_version>
+							<item class_id_reference="28" object_id="_142">
+								<port class_id_reference="29" object_id="_143">
+									<name>fifoC123</name>
+									<dir>0</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id="_144">
+									<type>0</type>
+									<name>AdderTree_U0</name>
+									<ssdmobj_id>60</ssdmobj_id>
+								</inst>
+							</item>
+							<item class_id_reference="28" object_id="_145">
+								<port class_id_reference="29" object_id="_146">
+									<name>fifoC224</name>
+									<dir>0</dir>
+									<type>1</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_144"></inst>
+							</item>
+							<item class_id_reference="28" object_id="_147">
+								<port class_id_reference="29" object_id="_148">
+									<name>readRep</name>
+									<dir>3</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_144"></inst>
+							</item>
+						</pins>
+					</item>
+					<item class_id_reference="26" object_id="_149">
+						<type>0</type>
+						<name>Accumulator_U0</name>
+						<ssdmobj_id>61</ssdmobj_id>
+						<pins>
+							<count>3</count>
+							<item_version>0</item_version>
+							<item class_id_reference="28" object_id="_150">
+								<port class_id_reference="29" object_id="_151">
+									<name>fifoC224</name>
+									<dir>0</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id="_152">
+									<type>0</type>
+									<name>Accumulator_U0</name>
+									<ssdmobj_id>61</ssdmobj_id>
+								</inst>
+							</item>
+							<item class_id_reference="28" object_id="_153">
+								<port class_id_reference="29" object_id="_154">
+									<name>fifoC325</name>
+									<dir>0</dir>
+									<type>1</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_152"></inst>
+							</item>
+							<item class_id_reference="28" object_id="_155">
+								<port class_id_reference="29" object_id="_156">
+									<name>readRep</name>
+									<dir>3</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_152"></inst>
+							</item>
+						</pins>
+					</item>
+					<item class_id_reference="26" object_id="_157">
+						<type>0</type>
+						<name>ScaWriter_U0</name>
+						<ssdmobj_id>62</ssdmobj_id>
+						<pins>
+							<count>3</count>
+							<item_version>0</item_version>
+							<item class_id_reference="28" object_id="_158">
+								<port class_id_reference="29" object_id="_159">
+									<name>fifoC325</name>
+									<dir>0</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id="_160">
+									<type>0</type>
+									<name>ScaWriter_U0</name>
+									<ssdmobj_id>62</ssdmobj_id>
+								</inst>
+							</item>
+							<item class_id_reference="28" object_id="_161">
+								<port class_id_reference="29" object_id="_162">
+									<name>ddr2</name>
+									<dir>1</dir>
+									<type>1</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_160"></inst>
+							</item>
+							<item class_id_reference="28" object_id="_163">
+								<port class_id_reference="29" object_id="_164">
+									<name>ddr</name>
+									<dir>0</dir>
+									<type>0</type>
+								</port>
+								<inst class_id_reference="30" object_id_reference="_160"></inst>
+							</item>
+						</pins>
+					</item>
+				</process_list>
+				<channel_list class_id="31" tracking_level="0" version="0">
+					<count>8</count>
+					<item_version>0</item_version>
+					<item class_id="32" tracking_level="1" version="0" object_id="_165">
+						<type>1</type>
+						<name>vecA_c</name>
+						<ssdmobj_id>14</ssdmobj_id>
+						<ctype>0</ctype>
+						<depth>2</depth>
+						<bitwidth>64</bitwidth>
+						<suggested_type>2</suggested_type>
+						<suggested_depth>2</suggested_depth>
+						<source class_id_reference="28" object_id="_166">
+							<port class_id_reference="29" object_id="_167">
+								<name>in</name>
+								<dir>3</dir>
+								<type>0</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_100"></inst>
+						</source>
+						<sink class_id_reference="28" object_id="_168">
+							<port class_id_reference="29" object_id="_169">
+								<name>out</name>
+								<dir>3</dir>
+								<type>1</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_114"></inst>
+						</sink>
+					</item>
+					<item class_id_reference="32" object_id="_170">
+						<type>1</type>
+						<name>vecB_c</name>
+						<ssdmobj_id>13</ssdmobj_id>
+						<ctype>0</ctype>
+						<depth>2</depth>
+						<bitwidth>64</bitwidth>
+						<suggested_type>2</suggested_type>
+						<suggested_depth>2</suggested_depth>
+						<source class_id_reference="28" object_id="_171">
+							<port class_id_reference="29" object_id="_172">
+								<name>in</name>
+								<dir>3</dir>
+								<type>0</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_100"></inst>
+						</source>
+						<sink class_id_reference="28" object_id="_173">
+							<port class_id_reference="29" object_id="_174">
+								<name>out</name>
+								<dir>3</dir>
+								<type>1</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_124"></inst>
+						</sink>
+					</item>
+					<item class_id_reference="32" object_id="_175">
+						<type>1</type>
+						<name>scaC_c</name>
+						<ssdmobj_id>12</ssdmobj_id>
+						<ctype>0</ctype>
+						<depth>6</depth>
+						<bitwidth>64</bitwidth>
+						<suggested_type>2</suggested_type>
+						<suggested_depth>6</suggested_depth>
+						<source class_id_reference="28" object_id="_176">
+							<port class_id_reference="29" object_id="_177">
+								<name>in</name>
+								<dir>3</dir>
+								<type>0</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_100"></inst>
+						</source>
+						<sink class_id_reference="28" object_id="_178">
+							<port class_id_reference="29" object_id="_179">
+								<name>out</name>
+								<dir>3</dir>
+								<type>1</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_160"></inst>
+						</sink>
+					</item>
+					<item class_id_reference="32" object_id="_180">
+						<type>1</type>
+						<name>fifoA_stream_s</name>
+						<ssdmobj_id>33</ssdmobj_id>
+						<ctype>0</ctype>
+						<depth>16</depth>
+						<bitwidth>128</bitwidth>
+						<suggested_type>0</suggested_type>
+						<suggested_depth>16</suggested_depth>
+						<source class_id_reference="28" object_id="_181">
+							<port class_id_reference="29" object_id="_182">
+								<name>in</name>
+								<dir>3</dir>
+								<type>0</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_114"></inst>
+						</source>
+						<sink class_id_reference="28" object_id="_183">
+							<port class_id_reference="29" object_id="_184">
+								<name>out</name>
+								<dir>3</dir>
+								<type>1</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_134"></inst>
+						</sink>
+					</item>
+					<item class_id_reference="32" object_id="_185">
+						<type>1</type>
+						<name>fifoB_stream_s</name>
+						<ssdmobj_id>36</ssdmobj_id>
+						<ctype>0</ctype>
+						<depth>16</depth>
+						<bitwidth>128</bitwidth>
+						<suggested_type>0</suggested_type>
+						<suggested_depth>16</suggested_depth>
+						<source class_id_reference="28" object_id="_186">
+							<port class_id_reference="29" object_id="_187">
+								<name>in</name>
+								<dir>3</dir>
+								<type>0</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_124"></inst>
+						</source>
+						<sink class_id_reference="28" object_id="_188">
+							<port class_id_reference="29" object_id="_189">
+								<name>out</name>
+								<dir>3</dir>
+								<type>1</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_134"></inst>
+						</sink>
+					</item>
+					<item class_id_reference="32" object_id="_190">
+						<type>1</type>
+						<name>fifoC1_stream_s</name>
+						<ssdmobj_id>39</ssdmobj_id>
+						<ctype>0</ctype>
+						<depth>16</depth>
+						<bitwidth>256</bitwidth>
+						<suggested_type>0</suggested_type>
+						<suggested_depth>16</suggested_depth>
+						<source class_id_reference="28" object_id="_191">
+							<port class_id_reference="29" object_id="_192">
+								<name>in</name>
+								<dir>3</dir>
+								<type>0</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_134"></inst>
+						</source>
+						<sink class_id_reference="28" object_id="_193">
+							<port class_id_reference="29" object_id="_194">
+								<name>out</name>
+								<dir>3</dir>
+								<type>1</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_144"></inst>
+						</sink>
+					</item>
+					<item class_id_reference="32" object_id="_195">
+						<type>1</type>
+						<name>fifoC2_stream_s</name>
+						<ssdmobj_id>42</ssdmobj_id>
+						<ctype>0</ctype>
+						<depth>16</depth>
+						<bitwidth>32</bitwidth>
+						<suggested_type>0</suggested_type>
+						<suggested_depth>16</suggested_depth>
+						<source class_id_reference="28" object_id="_196">
+							<port class_id_reference="29" object_id="_197">
+								<name>in</name>
+								<dir>3</dir>
+								<type>0</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_144"></inst>
+						</source>
+						<sink class_id_reference="28" object_id="_198">
+							<port class_id_reference="29" object_id="_199">
+								<name>out</name>
+								<dir>3</dir>
+								<type>1</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_152"></inst>
+						</sink>
+					</item>
+					<item class_id_reference="32" object_id="_200">
+						<type>1</type>
+						<name>fifoC3_stream_s</name>
+						<ssdmobj_id>45</ssdmobj_id>
+						<ctype>0</ctype>
+						<depth>2</depth>
+						<bitwidth>32</bitwidth>
+						<suggested_type>0</suggested_type>
+						<suggested_depth>2</suggested_depth>
+						<source class_id_reference="28" object_id="_201">
+							<port class_id_reference="29" object_id="_202">
+								<name>in</name>
+								<dir>3</dir>
+								<type>0</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_152"></inst>
+						</source>
+						<sink class_id_reference="28" object_id="_203">
+							<port class_id_reference="29" object_id="_204">
+								<name>out</name>
+								<dir>3</dir>
+								<type>1</type>
+							</port>
+							<inst class_id_reference="30" object_id_reference="_160"></inst>
+						</sink>
+					</item>
+				</channel_list>
+				<net_list class_id="33" tracking_level="0" version="0">
+					<count>0</count>
+					<item_version>0</item_version>
+				</net_list>
+			</mDfPipe>
+		</item>
+	</cdfg_regions>
+	<fsm class_id="-1"></fsm>
+	<res class_id="-1"></res>
+	<node_label_latency class_id="36" tracking_level="0" version="0">
+		<count>20</count>
+		<item_version>0</item_version>
+		<item class_id="37" tracking_level="0" version="0">
+			<first>8</first>
+			<second class_id="38" tracking_level="0" version="0">
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>9</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>10</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>11</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>12</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>13</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>14</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>33</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>36</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>39</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>42</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>45</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>56</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>57</first>
+			<second>
+				<first>1</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>58</first>
+			<second>
+				<first>1</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>59</first>
+			<second>
+				<first>3</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>60</first>
+			<second>
+				<first>5</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>61</first>
+			<second>
+				<first>7</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>62</first>
+			<second>
+				<first>9</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>63</first>
+			<second>
+				<first>10</first>
+				<second>0</second>
+			</second>
+		</item>
+	</node_label_latency>
+	<bblk_ent_exit class_id="39" tracking_level="0" version="0">
+		<count>1</count>
+		<item_version>0</item_version>
+		<item class_id="40" tracking_level="0" version="0">
+			<first>64</first>
+			<second class_id="41" tracking_level="0" version="0">
+				<first>0</first>
+				<second>10</second>
+			</second>
+		</item>
+	</bblk_ent_exit>
+	<regions class_id="42" tracking_level="0" version="0">
+		<count>1</count>
+		<item_version>0</item_version>
+		<item class_id="43" tracking_level="1" version="0" object_id="_205">
+			<region_name>VecDotProduct</region_name>
+			<basic_blocks>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>64</item>
+			</basic_blocks>
+			<nodes>
+				<count>56</count>
+				<item_version>0</item_version>
+				<item>8</item>
+				<item>9</item>
+				<item>10</item>
+				<item>11</item>
+				<item>12</item>
+				<item>13</item>
+				<item>14</item>
+				<item>15</item>
+				<item>16</item>
+				<item>17</item>
+				<item>18</item>
+				<item>19</item>
+				<item>20</item>
+				<item>21</item>
+				<item>22</item>
+				<item>23</item>
+				<item>24</item>
+				<item>25</item>
+				<item>26</item>
+				<item>27</item>
+				<item>28</item>
+				<item>29</item>
+				<item>30</item>
+				<item>31</item>
+				<item>32</item>
+				<item>33</item>
+				<item>34</item>
+				<item>35</item>
+				<item>36</item>
+				<item>37</item>
+				<item>38</item>
+				<item>39</item>
+				<item>40</item>
+				<item>41</item>
+				<item>42</item>
+				<item>43</item>
+				<item>44</item>
+				<item>45</item>
+				<item>46</item>
+				<item>47</item>
+				<item>48</item>
+				<item>49</item>
+				<item>50</item>
+				<item>51</item>
+				<item>52</item>
+				<item>53</item>
+				<item>54</item>
+				<item>55</item>
+				<item>56</item>
+				<item>57</item>
+				<item>58</item>
+				<item>59</item>
+				<item>60</item>
+				<item>61</item>
+				<item>62</item>
+				<item>63</item>
+			</nodes>
+			<anchor_node>-1</anchor_node>
+			<region_type>16</region_type>
+			<interval>0</interval>
+			<pipe_depth>0</pipe_depth>
+		</item>
+	</regions>
+	<dp_fu_nodes class_id="44" tracking_level="0" version="0">
+		<count>0</count>
+		<item_version>0</item_version>
+	</dp_fu_nodes>
+	<dp_fu_nodes_expression class_id="45" tracking_level="0" version="0">
+		<count>0</count>
+		<item_version>0</item_version>
+	</dp_fu_nodes_expression>
+	<dp_fu_nodes_module>
+		<count>0</count>
+		<item_version>0</item_version>
+	</dp_fu_nodes_module>
+	<dp_fu_nodes_io>
+		<count>0</count>
+		<item_version>0</item_version>
+	</dp_fu_nodes_io>
+	<return_ports>
+		<count>0</count>
+		<item_version>0</item_version>
+	</return_ports>
+	<dp_mem_port_nodes class_id="46" tracking_level="0" version="0">
+		<count>0</count>
+		<item_version>0</item_version>
+	</dp_mem_port_nodes>
+	<dp_reg_nodes>
+		<count>0</count>
+		<item_version>0</item_version>
+	</dp_reg_nodes>
+	<dp_regname_nodes>
+		<count>0</count>
+		<item_version>0</item_version>
+	</dp_regname_nodes>
+	<dp_reg_phi>
+		<count>0</count>
+		<item_version>0</item_version>
+	</dp_reg_phi>
+	<dp_regname_phi>
+		<count>0</count>
+		<item_version>0</item_version>
+	</dp_regname_phi>
+	<dp_port_io_nodes class_id="47" tracking_level="0" version="0">
+		<count>0</count>
+		<item_version>0</item_version>
+	</dp_port_io_nodes>
+	<port2core>
+		<count>0</count>
+		<item_version>0</item_version>
+	</port2core>
+	<node2core>
+		<count>0</count>
+		<item_version>0</item_version>
+	</node2core>
+</syndb>
+</boost_serialization>
+

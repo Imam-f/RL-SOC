@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="VecDotProduct.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_VecDotProduct_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct//AESL_inst_VecDotProduct_activity">
+         <obj_property name="label">AESL_inst_VecDotProduct_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_VecDotProduct_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_VecDotProduct_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct//AESL_inst_VecDotProduct_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct//AESL_inst_VecDotProduct_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct//AESL_inst_VecDotProduct_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/VecDotProduct_entry43_U0_activity">
+            <obj_property name="label">VecDotProduct_entry43_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">VecDotProduct_entry43_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">VecDotProduct_entry43_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/VecDotProduct_entry43_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/VecDotProduct_entry43_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/VecDotProduct_entry43_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/VecReader_U0_activity">
+            <obj_property name="label">VecReader_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">VecReader_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">VecReader_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/VecReader_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/VecReader_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/VecReader_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/VecReader1_U0_activity">
+            <obj_property name="label">VecReader1_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">VecReader1_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">VecReader1_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/VecReader1_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/VecReader1_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/VecReader1_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/EWiseMultipiler_U0_activity">
+            <obj_property name="label">EWiseMultipiler_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">EWiseMultipiler_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">EWiseMultipiler_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/EWiseMultipiler_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/EWiseMultipiler_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/EWiseMultipiler_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/AdderTree_U0_activity">
+            <obj_property name="label">AdderTree_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">AdderTree_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">AdderTree_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/AdderTree_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/AdderTree_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/AdderTree_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/Accumulator_U0_activity">
+            <obj_property name="label">Accumulator_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Accumulator_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Accumulator_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/Accumulator_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/Accumulator_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/Accumulator_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/ScaWriter_U0_activity">
+            <obj_property name="label">ScaWriter_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">ScaWriter_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">ScaWriter_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/ScaWriter_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/ScaWriter_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/ScaWriter_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct//AESL_inst_VecDotProduct_activity">
+      <obj_property name="ElementShortName">AESL_inst_VecDotProduct_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_VecDotProduct_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_VecDotProduct_group">
+      <obj_property name="label">AESL_inst_VecDotProduct</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/VecDotProduct_entry43_U0_activity">
+         <obj_property name="ElementShortName">VecDotProduct_entry43_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">VecDotProduct_entry43_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/VecReader_U0_activity">
+         <obj_property name="ElementShortName">VecReader_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">VecReader_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/VecReader1_U0_activity">
+         <obj_property name="ElementShortName">VecReader1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">VecReader1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/EWiseMultipiler_U0_activity">
+         <obj_property name="ElementShortName">EWiseMultipiler_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">EWiseMultipiler_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/AdderTree_U0_activity">
+         <obj_property name="ElementShortName">AdderTree_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">AdderTree_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/Accumulator_U0_activity">
+         <obj_property name="ElementShortName">Accumulator_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Accumulator_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/ScaWriter_U0_activity">
+         <obj_property name="ElementShortName">ScaWriter_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">ScaWriter_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_VecDotProduct_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="VecDotProduct_entry43_U0_group">
+         <obj_property name="label">VecDotProduct_entry43_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="VecDotProduct_entry43_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="VecDotProduct_entry43_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="VecDotProduct_entry43_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="vecA_out_group">
+               <obj_property name="label">vecA_out(vecA_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/vecA_out_blk_n">
+                  <obj_property name="ElementShortName">vecA_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">vecA_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/vecA_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/vecA_out_full_n">
+                  <obj_property name="ElementShortName">vecA_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">vecA_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/vecA_out_write">
+                  <obj_property name="ElementShortName">vecA_out_write</obj_property>
+                  <obj_property name="ObjectShortName">vecA_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="vecB_out_group">
+               <obj_property name="label">vecB_out(vecB_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/vecB_out_blk_n">
+                  <obj_property name="ElementShortName">vecB_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">vecB_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/vecB_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/vecB_out_full_n">
+                  <obj_property name="ElementShortName">vecB_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">vecB_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/vecB_out_write">
+                  <obj_property name="ElementShortName">vecB_out_write</obj_property>
+                  <obj_property name="ObjectShortName">vecB_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="scaC_out_group">
+               <obj_property name="label">scaC_out(scaC_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/scaC_out_blk_n">
+                  <obj_property name="ElementShortName">scaC_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">scaC_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/scaC_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/scaC_out_full_n">
+                  <obj_property name="ElementShortName">scaC_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">scaC_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecDotProduct_entry43_U0/scaC_out_write">
+                  <obj_property name="ElementShortName">scaC_out_write</obj_property>
+                  <obj_property name="ObjectShortName">scaC_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="VecReader_U0_group">
+         <obj_property name="label">VecReader_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="VecReader_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="ddr_group">
+               <obj_property name="label">ddr(vecA_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/ddr_blk_n">
+                  <obj_property name="ElementShortName">ddr_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">ddr_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/ddr_dout">
+                  <obj_property name="ElementShortName">ddr_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">ddr_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/ddr_empty_n">
+                  <obj_property name="ElementShortName">ddr_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">ddr_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/ddr_read">
+                  <obj_property name="ElementShortName">ddr_read</obj_property>
+                  <obj_property name="ObjectShortName">ddr_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="VecReader_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="VecReader_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="fifoA21_group">
+               <obj_property name="label">fifoA21(fifoA_stream_s_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/fifoA21_blk_n">
+                  <obj_property name="ElementShortName">fifoA21_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoA21_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/fifoA21_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/fifoA21_full_n">
+                  <obj_property name="ElementShortName">fifoA21_full_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoA21_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader_U0/fifoA21_write">
+                  <obj_property name="ElementShortName">fifoA21_write</obj_property>
+                  <obj_property name="ObjectShortName">fifoA21_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="VecReader1_U0_group">
+         <obj_property name="label">VecReader1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="VecReader1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="ddr_group">
+               <obj_property name="label">ddr(vecB_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/ddr_blk_n">
+                  <obj_property name="ElementShortName">ddr_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">ddr_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/ddr_dout">
+                  <obj_property name="ElementShortName">ddr_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">ddr_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/ddr_empty_n">
+                  <obj_property name="ElementShortName">ddr_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">ddr_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/ddr_read">
+                  <obj_property name="ElementShortName">ddr_read</obj_property>
+                  <obj_property name="ObjectShortName">ddr_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="VecReader1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="VecReader1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="fifoA21_group">
+               <obj_property name="label">fifoA21(fifoB_stream_s_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/fifoA21_blk_n">
+                  <obj_property name="ElementShortName">fifoA21_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoA21_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/fifoA21_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/fifoA21_full_n">
+                  <obj_property name="ElementShortName">fifoA21_full_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoA21_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/VecReader1_U0/fifoA21_write">
+                  <obj_property name="ElementShortName">fifoA21_write</obj_property>
+                  <obj_property name="ObjectShortName">fifoA21_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="EWiseMultipiler_U0_group">
+         <obj_property name="label">EWiseMultipiler_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="EWiseMultipiler_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="fifoA21_group">
+               <obj_property name="label">fifoA21(fifoA_stream_s_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/fifoA21_blk_n">
+                  <obj_property name="ElementShortName">fifoA21_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoA21_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/fifoA21_dout">
+                  <obj_property name="ElementShortName">fifoA21_dout[127:0]</obj_property>
+                  <obj_property name="ObjectShortName">fifoA21_dout[127:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/fifoA21_empty_n">
+                  <obj_property name="ElementShortName">fifoA21_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoA21_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/fifoA21_read">
+                  <obj_property name="ElementShortName">fifoA21_read</obj_property>
+                  <obj_property name="ObjectShortName">fifoA21_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="fifoB22_group">
+               <obj_property name="label">fifoB22(fifoB_stream_s_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/fifoB22_blk_n">
+                  <obj_property name="ElementShortName">fifoB22_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoB22_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/fifoB22_dout">
+                  <obj_property name="ElementShortName">fifoB22_dout[127:0]</obj_property>
+                  <obj_property name="ObjectShortName">fifoB22_dout[127:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/fifoB22_empty_n">
+                  <obj_property name="ElementShortName">fifoB22_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoB22_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/fifoB22_read">
+                  <obj_property name="ElementShortName">fifoB22_read</obj_property>
+                  <obj_property name="ObjectShortName">fifoB22_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="EWiseMultipiler_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="EWiseMultipiler_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="fifoC123_group">
+               <obj_property name="label">fifoC123(fifoC1_stream_s_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/fifoC123_blk_n">
+                  <obj_property name="ElementShortName">fifoC123_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoC123_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/fifoC123_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/fifoC123_full_n">
+                  <obj_property name="ElementShortName">fifoC123_full_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoC123_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/EWiseMultipiler_U0/fifoC123_write">
+                  <obj_property name="ElementShortName">fifoC123_write</obj_property>
+                  <obj_property name="ObjectShortName">fifoC123_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="AdderTree_U0_group">
+         <obj_property name="label">AdderTree_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="AdderTree_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="fifoC123_group">
+               <obj_property name="label">fifoC123(fifoC1_stream_s_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/fifoC123_blk_n">
+                  <obj_property name="ElementShortName">fifoC123_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoC123_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/fifoC123_dout">
+                  <obj_property name="ElementShortName">fifoC123_dout[255:0]</obj_property>
+                  <obj_property name="ObjectShortName">fifoC123_dout[255:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/fifoC123_empty_n">
+                  <obj_property name="ElementShortName">fifoC123_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoC123_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/fifoC123_read">
+                  <obj_property name="ElementShortName">fifoC123_read</obj_property>
+                  <obj_property name="ObjectShortName">fifoC123_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="AdderTree_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="AdderTree_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="fifoC224_group">
+               <obj_property name="label">fifoC224(fifoC2_stream_s_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/fifoC224_blk_n">
+                  <obj_property name="ElementShortName">fifoC224_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoC224_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/fifoC224_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/fifoC224_full_n">
+                  <obj_property name="ElementShortName">fifoC224_full_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoC224_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/AdderTree_U0/fifoC224_write">
+                  <obj_property name="ElementShortName">fifoC224_write</obj_property>
+                  <obj_property name="ObjectShortName">fifoC224_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Accumulator_U0_group">
+         <obj_property name="label">Accumulator_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Accumulator_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="fifoC224_group">
+               <obj_property name="label">fifoC224(fifoC2_stream_s_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/fifoC224_blk_n">
+                  <obj_property name="ElementShortName">fifoC224_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoC224_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/fifoC224_dout">
+                  <obj_property name="ElementShortName">fifoC224_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">fifoC224_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/fifoC224_empty_n">
+                  <obj_property name="ElementShortName">fifoC224_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoC224_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/fifoC224_read">
+                  <obj_property name="ElementShortName">fifoC224_read</obj_property>
+                  <obj_property name="ObjectShortName">fifoC224_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Accumulator_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Accumulator_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="fifoC325_group">
+               <obj_property name="label">fifoC325(fifoC3_stream_s_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/fifoC325_blk_n">
+                  <obj_property name="ElementShortName">fifoC325_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoC325_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/fifoC325_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/fifoC325_full_n">
+                  <obj_property name="ElementShortName">fifoC325_full_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoC325_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/Accumulator_U0/fifoC325_write">
+                  <obj_property name="ElementShortName">fifoC325_write</obj_property>
+                  <obj_property name="ObjectShortName">fifoC325_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="ScaWriter_U0_group">
+         <obj_property name="label">ScaWriter_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="ScaWriter_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="fifoC325_group">
+               <obj_property name="label">fifoC325(fifoC3_stream_s_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/fifoC325_blk_n">
+                  <obj_property name="ElementShortName">fifoC325_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoC325_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/fifoC325_dout">
+                  <obj_property name="ElementShortName">fifoC325_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">fifoC325_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/fifoC325_empty_n">
+                  <obj_property name="ElementShortName">fifoC325_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">fifoC325_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/fifoC325_read">
+                  <obj_property name="ElementShortName">fifoC325_read</obj_property>
+                  <obj_property name="ObjectShortName">fifoC325_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="ddr_group">
+               <obj_property name="label">ddr(scaC_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/ddr_blk_n">
+                  <obj_property name="ElementShortName">ddr_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">ddr_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/ddr_dout">
+                  <obj_property name="ElementShortName">ddr_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">ddr_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/ddr_empty_n">
+                  <obj_property name="ElementShortName">ddr_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">ddr_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/ddr_read">
+                  <obj_property name="ElementShortName">ddr_read</obj_property>
+                  <obj_property name="ObjectShortName">ddr_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="ScaWriter_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_VecDotProduct_top/AESL_inst_VecDotProduct/ScaWriter_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="ScaWriter_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

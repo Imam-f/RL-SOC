@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1631600469070">
+  <ports id="1" name="fifoC325" type="PortType" originalName="fifo.stream_" coreName="FIFO_SRL" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="ddr2" type="PortType" bitwidth="32" direction="DirOut" iftype="IfTypeFifo">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="3" name="ddr" type="PortType" coreName="FIFO_SRL" bitwidth="64" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="21" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="24" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="27" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="32" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="33" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@ports.1"/>
+  <edges id="34" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="37" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="42" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="43" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="48" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="147" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="148" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <blocks id="18" name="ScaWriter" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="ddr_3" lineNumber="11" originalName="ddr" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." contextFuncName="ScaWriter" bitwidth="64" opcode="read" m_display="0" m_delay="1.88" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="11" fileDirectory="D:\Dev\MBKM" functionName="ScaWriter"/>
+      <dataInputObjs>ddr</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="tmp" lineNumber="145" originalName="tmp" fileName="D:/xilinx/vitis/2020.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." contextFuncName="read" bitwidth="32" opcode="read" m_display="0" m_delay="1.83" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/xilinx/vitis/2020.1/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="D:\Dev\MBKM" functionName="read"/>
+      <dataInputObjs>fifoC325</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="trunc_ln" lineNumber="12" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." rtlName="trunc_ln_fu_72_p4" contextFuncName="ScaWriter" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="12" fileDirectory="D:\Dev\MBKM" functionName="ScaWriter"/>
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="sext_ln12" lineNumber="12" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." rtlName="sext_ln12_fu_82_p1" contextFuncName="ScaWriter" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="12" fileDirectory="D:\Dev\MBKM" functionName="ScaWriter"/>
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="ddr2_addr" lineNumber="12" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." contextFuncName="ScaWriter" bitwidth="32" opcode="getelementptr" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="12" fileDirectory="D:\Dev\MBKM" functionName="ScaWriter"/>
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>ddr2</dataOutputObjs>
+      <dataOutputObjs>writereq</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>writeresp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="ddr2_addr_req" lineNumber="12" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." contextFuncName="ScaWriter" bitwidth="1" opcode="writereq" nodeLabel="1.0" m_display="0" m_delay="7.3" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="12" fileDirectory="D:\Dev\MBKM" functionName="ScaWriter"/>
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="ddr2_addr_write_ln12" lineNumber="12" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." contextFuncName="ScaWriter" opcode="write" nodeLabel="2.0" m_display="0" m_delay="7.3" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="12" fileDirectory="D:\Dev\MBKM" functionName="ScaWriter"/>
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="ddr2_addr_resp" lineNumber="12" fileName="Tutorial5/InterfaceModule.cpp" fileDirectory=".." contextFuncName="ScaWriter" bitwidth="1" opcode="writeresp" nodeLabel="3.0" nodeLatency="4" m_display="0" m_delay="7.3" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/InterfaceModule.cpp" linenumber="12" fileDirectory="D:\Dev\MBKM" functionName="ScaWriter"/>
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="_ln3" lineNumber="3" fileName="Tutorial5/Top.cpp" fileDirectory=".." contextFuncName="VecDotProduct" opcode="ret" nodeLabel="7.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Tutorial5/Top.cpp" linenumber="3" fileDirectory="D:\Dev\MBKM" functionName="VecDotProduct"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="Tutorial5/InterfaceModule.cpp">
+      <validLinenumbers>11</validLinenumbers>
+      <validLinenumbers>12</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="D:/xilinx/vitis/2020.1/common/technology/autopilot/hls_stream_39.h">
+      <validLinenumbers>145</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="Tutorial5/Top.cpp">
+      <validLinenumbers>3</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <regnodes realName="ddr2_addr_reg_97">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_92">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <expressionNodes realName="sext_ln12_fu_82">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ddr2_addr_fu_86">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_72">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="grp_writeresp_fu_56">
+    <nodeIds>14</nodeIds>
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="ddr_3_read_fu_44">
+    <nodeIds>7</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln12_write_fu_63">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_read_fu_50">
+    <nodeIds>10</nodeIds>
+  </ioNodes>
+  <ioPorts name="ddr">
+    <contents name="read">
+      <nodeIds>7</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ddr2"/>
+  <ioPorts name="fifoC325">
+    <contents name="read">
+      <nodeIds>10</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="14" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="15" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="16" stage="5" latency="5"/>
+    </states>
+    <states id="5">
+      <operations id="16" stage="4" latency="5"/>
+    </states>
+    <states id="6">
+      <operations id="16" stage="3" latency="5"/>
+    </states>
+    <states id="7">
+      <operations id="16" stage="2" latency="5"/>
+    </states>
+    <states id="8">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="5"/>
+      <operations id="17" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="ScaWriter" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="7" mMaxLatency="7">
+      <basicBlocks>18</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

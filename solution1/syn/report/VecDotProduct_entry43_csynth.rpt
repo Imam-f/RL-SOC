@@ -1,0 +1,144 @@
+
+
+================================================================
+== Vitis HLS Report for 'VecDotProduct_entry43'
+================================================================
+* Date:           Tue Sep 14 13:21:07 2021
+
+* Version:        2020.1 (Build 2902540 on Wed May 27 20:16:15 MDT 2020)
+* Project:        Tutorial5
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 1.885 ns |   2.70 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|   0 ns   |   0 ns   |    0|    0|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|       2|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      45|    -|
+|Register         |        -|     -|       3|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|       3|      47|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      624|  1728|  460800|  230400|   96|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|   ~0   |   ~0   |    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |    or    |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------+----+-----------+-----+-----------+
+    |      Name      | LUT| Input Size| Bits| Total Bits|
+    +----------------+----+-----------+-----+-----------+
+    |ap_done         |   9|          2|    1|          2|
+    |real_start      |   9|          2|    1|          2|
+    |scaC_out_blk_n  |   9|          2|    1|          2|
+    |vecA_out_blk_n  |   9|          2|    1|          2|
+    |vecB_out_blk_n  |   9|          2|    1|          2|
+    +----------------+----+-----------+-----+-----------+
+    |Total           |  45|         10|    5|         10|
+    +----------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |ap_CS_fsm       |  1|   0|    1|          0|
+    |ap_done_reg     |  1|   0|    1|          0|
+    |start_once_reg  |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+    |Total           |  3|   0|    3|          0|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+-----------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++-----------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk           |  in |    1| ap_ctrl_hs | VecDotProduct.entry43 | return value |
+|ap_rst           |  in |    1| ap_ctrl_hs | VecDotProduct.entry43 | return value |
+|ap_start         |  in |    1| ap_ctrl_hs | VecDotProduct.entry43 | return value |
+|start_full_n     |  in |    1| ap_ctrl_hs | VecDotProduct.entry43 | return value |
+|ap_done          | out |    1| ap_ctrl_hs | VecDotProduct.entry43 | return value |
+|ap_continue      |  in |    1| ap_ctrl_hs | VecDotProduct.entry43 | return value |
+|ap_idle          | out |    1| ap_ctrl_hs | VecDotProduct.entry43 | return value |
+|ap_ready         | out |    1| ap_ctrl_hs | VecDotProduct.entry43 | return value |
+|start_out        | out |    1| ap_ctrl_hs | VecDotProduct.entry43 | return value |
+|start_write      | out |    1| ap_ctrl_hs | VecDotProduct.entry43 | return value |
+|vecA             |  in |   64|   ap_none  |          vecA         |    scalar    |
+|vecB             |  in |   64|   ap_none  |          vecB         |    scalar    |
+|scaC             |  in |   64|   ap_none  |          scaC         |    scalar    |
+|vecA_out_din     | out |   64|   ap_fifo  |        vecA_out       |    pointer   |
+|vecA_out_full_n  |  in |    1|   ap_fifo  |        vecA_out       |    pointer   |
+|vecA_out_write   | out |    1|   ap_fifo  |        vecA_out       |    pointer   |
+|vecB_out_din     | out |   64|   ap_fifo  |        vecB_out       |    pointer   |
+|vecB_out_full_n  |  in |    1|   ap_fifo  |        vecB_out       |    pointer   |
+|vecB_out_write   | out |    1|   ap_fifo  |        vecB_out       |    pointer   |
+|scaC_out_din     | out |   64|   ap_fifo  |        scaC_out       |    pointer   |
+|scaC_out_full_n  |  in |    1|   ap_fifo  |        scaC_out       |    pointer   |
+|scaC_out_write   | out |    1|   ap_fifo  |        scaC_out       |    pointer   |
++-----------------+-----+-----+------------+-----------------------+--------------+
+
